@@ -10,4 +10,6 @@ if (!$link) {
 
 echo "Success: A proper connection to MySQL was made! The docker database is great." . PHP_EOL;
 
+echo "<p>Clave Mysql [". $_ENV['MYSQL_ROOT_PASSWORD']."]";
+
 mysqli_close($link);
